@@ -51,5 +51,9 @@
       (cons (car lst) (cons (car lst) (shadow (cdr lst))))))
 
 ;problem 4.2
-(define (hunt-target))
+(define (hunt-target target lst)
+  (cond
+    [(null? lst) #f]
+    [(equal? target (car lst)) #t]
+    [else (hunt-target target (cdr lst))]))
         
