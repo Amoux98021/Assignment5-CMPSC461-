@@ -1,7 +1,13 @@
 #lang racket/base
 
 ;problem 1.1
-(define (discount ))
+(define (discount org)
+  (cond
+    [(string=? org "AAA") 0.15]
+    [(string=? org "ACM") 0.25]
+    [(string=? org "IEEE") 0.25]
+    [(string=? org "UPE") 0.3]
+    [else 0]))
 
 ;problem 1.2
 (define (flip ))
